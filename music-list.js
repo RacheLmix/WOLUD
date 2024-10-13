@@ -38,5 +38,11 @@ let allMusic = [
     artist: "Thpons",
     img: "Thpon",
     src: "Thpon"
+  },
+  {
+    name: "Thăm Cố Tri",
+    artist: "Lux",
+    img: "Hst",
+    src: "Thăm-Cố-Tri"
   }
 ];

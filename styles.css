@@ -144,21 +144,28 @@ nav ul li a{
 
 /*SONG*/
 #albumImage {
-  text-align: left;
-  margin-top: 5px;
-  margin-right: 10px;
+  margin-right: 1200px;
+  border-radius: 99px;
+  margin-top: 30px;
+  margin: 0px;
+  border: 2px solid white;
+  padding: 5px 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+#albumImage:hover{
+  background-color: white;
 }
 
 #songInfo {
+  align-items: center;
   display: flex;
   position: fixed;
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 10px 80px;
-  border-radius: 10px;
+  margin: 0px;
+  border-radius: 900px;
   font-family: Arial, sans-serif;
   text-align: center;
 }
@@ -171,9 +178,4 @@ nav ul li a{
   font-size: 0.9em;
   font-style: italic;
 }
-
-
-
-
-
 
