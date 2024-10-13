@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="img/png" href="imgae\icon.jpg">
+    <title>THIS IS LUMINOUS WEB</title>
+    <link rel="stylesheet" href="stylesgetstared.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body data-aos="fade-up">
+    <script src="getstared.js"></script>
+    <div class="META">
+        <audio id="main-audio" autoplay src=""></audio>
+        <video autoplay loop muted plays-inline class="videos12">
+            <source src="imgae/mylive.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <img onclick="Changto(this)" src="imgae/isc.jpg" class="icon">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="https://drive.google.com/drive/folders/13wG9w-vkoHPcsnX6dihnMQtcSZ715Pdc?usp=drive_link">PROJECT</a></li>
+                <li><a href="https://www.facebook.com/Luminous.002">CONTACT US</a></li>
+                <li><a href="report.html">REPORT</a></li>
+                <button id="nextSong">Next Song</button>
+                <button id="toggleSongInfo">Song Info</button>
+            </ul>
+        </nav>
+        <div class="MCK">
+            <h1>LUMINOUS</h1>
+            <h4> Right now maybe this is the pivotal moment, it's time for<br>
+                 us to open up a new future for a strong generation. <br>
+                That's what I've tried to do to become more mature at work, <br>
+                so this is is the time when we ourselves break <br>
+                 through and surpass our limits and reach new levels.
+            </h4>
+        </div>
+        <hr>
+        <div id="songInfo" style="display: none;">
+            <div class="anhabums">
+            <img style="width: 100px;" id="albumImage" src="" alt="Album Image">
+        </div>
+            <p id="songName"></p>
+            <p id="songArtist"></p>
+            <p id="songTime"></p>
+        </div>
+      <script src="music-list.js"></script>
+      <script src="music.js"></script>
+    </div>
+    <script>
+        function ChangeTo(img){
+            window.location.href = "https://github.com/RacheLmix/";
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
