@@ -135,31 +135,39 @@ nav ul li a{
     color: #000000;
   }
   /*SONG*/
-  #albumImage{
-    text-align: left;
-    margin-top: 5px;
-    margin-right: 10px; /* Thêm khoảng cách giữa hình ảnh album và các thông tin bài hát */
-  }
+    #albumImage {
+      margin-right: 1200px;
+      border-radius: 99px;
+      margin-top: 30px;
+      margin: 0px;
+      border: 2px solid white;
+      padding: 5px 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
   
-  #songInfo {
-    display: flex;
-    position: fixed;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px 80px; /* Tăng độ rộng của thông tin bài hát */
-    border-radius: 10px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
+    #albumImage:hover {
+      background-color: white;
+    }
   
-  #songInfo p {
-    margin: 0px;
-  }
+    #songInfo {
+      align-items: center;
+      display: flex;
+      position: fixed;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      margin: 0px;
+      border-radius: 900px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
   
-  #songInfo p#songTime {
-    font-size: 0.9em;
-    font-style: italic;
-  }
+    #songInfo p {
+      margin: 0px;
+    }
+  
+    #songInfo p#songTime {
+      font-size: 0.9em;
+      font-style: italic;
+    }

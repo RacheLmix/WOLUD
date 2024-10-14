@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Hiển thị cảnh báo khi trang web được tải
-    alert("Hi everybody Im am Luminous Wellcome to my WEBSITE!!!");
+
+    alert("Hi everybody Im Am Racehl Wellcome to my WEBSITE!!!");
 
     const mainAudio = document.getElementById("main-audio");
     const albumImage = document.getElementById("albumImage");

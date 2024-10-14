@@ -44,5 +44,11 @@ let allMusic = [
     artist: "Lux",
     img: "Hst",
     src: "Thăm-Cố-Tri"
+  },
+  {
+    name: "FE!N",
+    artist: "Lux",
+    img: "Sailor Moon icon",
+    src: "FE!N"
   }
 ];

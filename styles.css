@@ -1,110 +1,142 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-    
-}
-.META{
-    background-image: linear-gradient(rgba(55, 55, 55, 0),rgba(10, 9, 16, 0.3));
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-nav{
-    width: 100%;
-    position: absolute;
-    top: -15px;
-    padding: 20px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.META {
+  background-image: linear-gradient(rgba(55, 55, 55, 0), rgba(10, 9, 16, 0.3));
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-nav .icon{
-    width: 60px;
-    height: 60px;
-    border: 2px solid #ffffff;
-    padding: 5px 5px;
-    border-radius: 90px;
-    margin-left: -90px;
-    transition: transform 300ms ease-in-out;
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: -15px;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-nav .icon:hover{
+
+nav .icon {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  padding: 5px 5px;
+  border-radius: 90px;
+  margin-left: -90px;
+  transition: transform 300ms ease-in-out;
+}
+
+nav .icon:hover {
   transform: scale(1.1);
 }
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
 }
-nav ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
 }
-.MCK{
-    text-align: center;
+
+.MCK {
+  text-align: center;
 }
-.MCK h1{
-    font-size: 160px;
-    color: #ffffff;
-    font-weight: 600;
-    transition: 0.5s;
+
+.MCK h1 {
+  font-size: 160px;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.5s;
 }
-.MCK h1:hover{
-    -webkit-text-stroke: 2px #ffffff;
-    color: transparent;
+
+.MCK h1:hover {
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
 }
-.MCK h1{
-    text-align: center;
-    height: 200px;
-    font-size: 100px;
-    font-weight: 600px;
-    color: #ffffff;
-   
+
+.MCK h1 {
+  text-align: center;
+  height: 200px;
+  font-size: 100px;
+  font-weight: 600px;
+  color: #ffffff;
 }
+
 .MCK a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
   color: #ffffff;
   font-size: 24px;
-  border: 2px solid #ffffff;
   padding: 14px 70px;
+  border: 2px solid;
   border-radius: 50px;
   margin-top: 20px;
-  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
-.MCK a:hover {
+.MCK a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 90px;
+  background-image: linear-gradient(1000deg, #ff0000, #00ff00, #0000ff, #ff00ff);
+  z-index: -1;
+  animation: borderAnimation 2s linear infinite;
+  filter: blur(15px);
+}
+@keyframes borderAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* .MCK a:hover {
   color: black;
   background-color: white;
-}
-.videos12{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+} */
+
+.videos12 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
-@media (min-aspect-ratio: 16/9){
-    .videos12{
-        width: 100%;
-        height: auto;
-    }
+@media (min-aspect-ratio: 16/9) {
+  .videos12 {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #nextSong {
   position: absolute;
-  top: 50%; /* Đặt nút ở giữa theo chiều dọc */
+  top: 50%;
   transform: translateY(-50%);
-  right: 1600px; /* Đặt nút ở phía bên phải */
+  right: 1600px;
   text-decoration: none;
   display: inline-block;
   color: #ffffff;
@@ -142,7 +174,6 @@ nav ul li a{
   color: #000000;
 }
 
-/*SONG*/
 #albumImage {
   margin-right: 1200px;
   border-radius: 99px;
@@ -152,7 +183,8 @@ nav ul li a{
   padding: 5px 5px;
   transition: background-color 0.3s ease-in-out;
 }
-#albumImage:hover{
+
+#albumImage:hover {
   background-color: white;
 }
 
@@ -178,4 +210,3 @@ nav ul li a{
   font-size: 0.9em;
   font-style: italic;
 }
-
